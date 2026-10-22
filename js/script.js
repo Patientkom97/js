@@ -16,18 +16,18 @@ const compteur = document.getElementById('compteur');
 const plus = document.getElementById('plus');
 const zero = document.getElementById('zero');
 const moins = document.getElementById('moins');
-let number = 0;
+let chiffre = 0;
 function augmenter() {
-    number = number + 1;
-    compteur.textContent = number;
+    chiffre = chiffre + 1;
+    compteur.textContent = chiffre;
 }
 function diminuer() {
-    number = number - 1;
-    compteur.textContent = number;
+    chiffre = chiffre - 1;
+    compteur.textContent = chiffre;
 }
 function remettreAZero() {
-    number = 0;
-    compteur.textContent = number;
+    chiffre = 0;
+    compteur.textContent = chiffre;
 }
 plus.addEventListener('click', augmenter);
 moins.addEventListener('click', diminuer);
